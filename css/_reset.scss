@@ -1,0 +1,86 @@
+
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+:-moz-placeholder {
+  color: #ccc;
+}
+
+::-moz-placeholder {
+  color: #ccc;
+}
+
+:-ms-input-placeholder {
+  color: #ccc;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #1a2036;
+  overflow: hidden;
+}
+
+main {
+  display: block;
+}
+
+a {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  outline: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Constantia', 'Merriweather', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p,
+form,
+figure,
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  border: none;
+}
+
+.mobile {
+  display: none;
+}

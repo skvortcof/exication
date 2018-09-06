@@ -1,0 +1,148 @@
+/* Pages */
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  overflow: hidden;
+  .active {
+    z-index: 1000;
+  }
+}
+
+/* Page 1 | Configuration */
+
+.page-1 {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  .scene {
+    position: absolute;
+    .scene-img {
+      opacity: .1;
+    }
+  }
+  .video {
+    opacity: .5;
+    z-index: 999;
+  }
+}
+
+.body-page-1 {
+  .mistake {
+    display: inline;
+  }
+}
+
+
+
+/* Page 2 | Foreword */
+
+.body-page-2 {
+  .header {
+    top: 100px;
+    width: 100%;
+    height: 200px;
+
+    .title {
+      color: #fff;
+    }
+  }
+}
+
+.page-2 {
+  z-index: 90;
+  .page-content {
+    color: #fff;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    .row {
+      padding: 200px 0 0;
+    }
+    h4 {
+      font-size: 18px;
+      padding: 20px 0 15px;
+    }
+    ul {
+      padding: 5px 0 15px;
+      li {
+        font-size: 14px;
+      }
+    }
+    p {
+      font-size: 14px;
+      margin: 10px 0 5px;
+    }
+  }
+}
+
+/* Page 3 */
+
+.page-3 {
+  .video {
+    opacity: .1;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+
+.page-3 {
+  background: #ffa45f;
+  z-index: 80;
+  .wall {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .wall-img {
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.page-4 {
+  z-index: 70;
+
+  .page-content {
+    color: #fff;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    .row {
+      padding: 200px 0 0;
+    }
+    h4 {
+      font-size: 18px;
+      padding: 20px 0 15px;
+    }
+    ul {
+      padding: 5px 0 15px;
+      li {
+        font-size: 14px;
+      }
+    }
+    p {
+      font-size: 14px;
+      margin: 10px 0 5px;
+    }
+  }
+}

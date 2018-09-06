@@ -1,0 +1,23 @@
+/* Leafs */
+
+.leafs {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  .leaf {
+    position: absolute;
+  }
+  .leaf-bc {
+    bottom: -100px;
+    left: 0;
+  }
+  .leaf-rc {
+    right: 0;
+    top: 50%;
+  }
+  .leaf-tl {
+    left: 0;
+    top: 0;
+  }
+}
