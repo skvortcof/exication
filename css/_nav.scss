@@ -20,23 +20,11 @@
 }
 
 /**
- * Navigation
- */
-
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  display: none;
-}
-
-/**
  * Configuration Menu
  */
 
 .config-menu {
-  position: absolute;
+  position: fixed;
   z-index: 2000;
   margin: 20px;
   left: 0;

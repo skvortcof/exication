@@ -33,92 +33,32 @@
 </head>
 
 <body>
-  <!--[if lt IE 8]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p> <![endif]-->
-
-  <!-- Leafs -->
-  <section class="leafs">
-    <img src="img/l-bc.png" class="leaf leaf-bc" />
-    <img src="img/l-rc.png" class="leaf leaf-rc" />
-    <img src="img/l-tl.png" class="leaf leaf-tl" />
-  </section>
-
   <!-- Audio -->
   <audio id="audio" autoplay loop preload>
     <source src="sound/muldeponie.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <ul>
-      <li>
-        <a href="#" name="1" class="nav-link active">⚛ Configuration</a>
-      </li>
-      <li>
-        <a href="#" name="2" class="nav-link">⚛ Foreword</a>
-      </li>
-      <li>
-        <a href="#" name="3" class="nav-link">⚛ Poem</a>
-      </li>
-      <li>
-        <a href="#" name="4" class="nav-link">⚛ About</a>
-      </li>
-    </ul>
-  </nav>
-
-
   <!-- Heder -->
   <header class="header">
-    <h2 class="title">
-      <span class="title-letter">Ξ</span><span>xικaџι</span><span class="title-letter">Ѧ</span>
-    </h2>
-    <p class="subtitle">
-      <span>e-poetical</span>
-      <s class="mistake">cursing</s>
-      <span>denunciation</span>
-    </p>
-    <div class="annotation">
-      <img src="img/header-l.jpg" alt="" class="header-img">
-
-      <!-- Instructions -->
-      <div class="info">
-        <ul>
-          <li>
-            <i class="fa fa-headphones" aria-hidden="true"></i>
-            1. Please switch full screen for better view
-          </li>
-          <li>
-            <i class="fa fa-coffee" aria-hidden="true"></i>
-            2. Take some toasts with tea and enjoy the poem
-          </li>
-          <li class="mobile">
-            <i class="fa fa-mobile" aria-hidden="true"></i>
-            Better view on Desktop PC
-          </li>
-        </ul>
-      </div>
+    <div class="header-body">
+      <h2 class="title">
+        <span class="title-letter">Ξ</span><span>xικaџι</span><span class="title-letter">Ѧ</span>
+      </h2>
+      <p class="subtitle">
+        <span>e-poetical</span>
+        <s class="mistake">cursing</s>
+        <span>denunciation</span>
+      </p>
     </div>
+
+    <video autoplay muted loop id="shadow_video" class="video">
+      <source src="video/shadow.mp4" type="video/mp4">
+    </video>
   </header>
 
   <!-- Configuration -->
   <menu class="config-menu">
     <ul class="config-menu-list">
-      <!-- Full Screen-->
-      <li class="config-menu-item">
-        <button class="config-menu-btn" id="btn_toggle_screen" data-toggle="tooltip" title="Toggle Full Screen [F11]">
-          <i class="fa fa-arrows" aria-hidden="true"></i>
-        </button>
-      </li>
-
-      <!-- Sound -->
-      <li class="config-menu-item">
-        <button class="config-menu-btn" id="btn_sound_on" data-toggle="tooltip" title="Sound On">
-          <i class="fa fa-volume-up" aria-hidden="true"></i>
-        </button>
-        <button class="config-menu-btn" id="btn_sound_off" data-toggle="tooltip" title="Sound Off" style="display: none;">
-          <i class="fa fa-volume-off" aria-hidden="true"></i>
-        </button>
-      </li>
-
       <!-- Full Screen-->
       <li class="config-menu-item subpage-item">
 
@@ -143,11 +83,6 @@
         </div>
       </li>
 
-      <!-- Continue -->
-      <li class="config-menu-item config-menu-link-continue">
-        <button class="config-menu-btn btn-continue" id="btnContinue">Continue</button>
-      </li>
-
       <!-- External Link -->
       <li class="config-menu-item subpage-item external-link">
         <a href="https://lj.rossia.org/users/kyzma/775501.html" target="_blank" class="config-menu-btn config-menu-link" id="btn_poem_link" data-toggle="tooltip" title="Text version (external link)">
@@ -157,103 +92,78 @@
     </ul>
   </menu>
 
-  <!-- 1. Configuration -->
-  <section class="page page-1" id="page1">
-    <div id="scene" class="scene">
-      <div data-depth="0.20">
-        <img src="img/w3.jpg" alt="" class="scene-img" id="p1_scene_img" />
-      </div>
-    </div>
-  </section>
-
-  <!-- 2. Foreword -->
-  <section class="page page-2" id="page2">
-
+  <!-- 2. City -->
+  <section class="page page-2" id="page3">
     <article class="page-content">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h4>Добро пожаловать в Эксикацию:</h4>
-            <ul>
-              <li>- оживление забываемого</li>
-              <li>- привет из соседнего измерения</li>
-              <li>- процесс подготовки в гербарий</li>
-            </ul>
-            <p>
-              Ещё возможностей. Осадок ненависти. Развлечение на чужих ошибках. Измерение масштабов самообмана. Ненависть перезрела; Отслоилась иссохшим листком. Никому не нужный лежит, превращаясь в компост. Поднялся воспоминаниями, оформился.
-            </p>
-          </div>
-          <div class="col">
-            <h4>На листочке написано:</h4>
-            <p>
-              К неодумению -- как самим себе можно выбирать самообман; Почему терпеть и потворствовать разграблению своих жалких накоплений; Уничтожать среду обетания, заботясь о комфорте в туалетном помещении.
-            </p>
-            <p>
-              Было забавно -- наблюдать за жадным вскармливанием эпохой; В преступлениях привычного с далекими и безопасными источниками. И в круговороте интересов не заметил того, ради чего на защиту вышло и уже столько погибло хороших людей.
-            </p>
-          </div>
-          <div class="col">
-            <h4>На другой стороне:</h4>
-            <p>
-              "У каждого своя формула понимания и стратегия противодействия. На самом деле явление глобально и кроется в свойствах. Но что там до чужой судьбы? Человека или... произведения. Да нет никакого дела. Самые качественные медиа-мученники уже всё сказали, объяснили и заслужили беспомощного хайпа."
-            </p>
-            <p>
-              Как рано мы восстали. Захвачены заводы, как и раньше. Искаженным храмам нет числа. Проклятий больше чем звезд. Столица перенесена и перестроена. Им в диссонанс из всех мучений
-              <em>Никем</em> и
-              <em>Ничего</em>.
-            </p>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h4>Добро пожаловать<br> в Эксикацию:</h4>
+              <ul>
+                <li>⚛ оживление забываемого</li>
+                <li>⚛ привет из соседнего измерения</li>
+                <li>⚛ процесс подготовки в гербарий</li>
+              </ul>
+              <p>
+                Ещё возможностей. Осадок ненависти. Развлечение на чужих ошибках. Измерение масштабов самообмана. Ненависть перезрела; Отслоилась иссохшим листком. Никому не нужный лежит, превращаясь в компост. Поднялся воспоминаниями, оформился.
+              </p>
+            </div>
+            <div class="col">
+              <h4>На листочке написано:</h4>
+              <p>
+                К неодумению — как самим себе можно выбирать самообман; Почему терпеть и потворствовать разграблению своих жалких накоплений; Уничтожать среду обетания, заботясь о комфорте в туалетном помещении.
+              </p>
+              <p>
+                Было забавно — наблюдать за жадным вскармливанием эпохой; В преступлениях привычного с далекими и безопасными источниками. И в круговороте интересов не заметил того, ради чего на защиту вышло и уже столько погибло хороших людей.
+              </p>
+            </div>
+            <div class="col">
+              <h4>На другой стороне:</h4>
+              <p>
+                "У каждого своя формула понимания и стратегия противодействия. На самом деле явление глобально и кроется в свойствах. Но что там до чужой судьбы? Человека или... произведения. Да нет никакого дела. Самые качественные медиа-мученники уже всё сказали, объяснили и заслужили беспомощного хайпа."
+              </p>
+              <p>
+                Как рано мы восстали. Захвачены заводы, как и раньше. Искаженным храмам нет числа. Проклятий больше чем звезд. Столица перенесена и перестроена. Им в диссонанс из всех мучений
+                <em>Никем</em> и
+                <em>Ничего</em>.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </article>
-    <div id="scene" class="scene">
-      <div data-depth="0.20">
-        <video autoplay muted loop id="shadow_video" class="video">
-          <source src="video/shadow.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. City -->
-  <section class="page page-3" id="page3">
-    <video autoplay muted loop id="dust_video" class="video">
-      <source src="video/dust.mp4" type="video/mp4">
-    </video>
+      </article>
 
     <div class="wall">
       <div class="poem">
-<span class="poem-part poem-part-0 poem-part-title">
-<h3>ΞxικaџιѦ</h3>
-</span>
 
-<span class="poem-part poem-part-1 poem-part-title">
 <h4><span>Часть 1.</span> Стадо</h4>
-</span>
+
 <pre>
 <span class="poem-part poem-part-content poem-part-2">
 Если Мы выживет значит где-то ошиблись.
 Под эстетикой солнца эхом шанс воспалиться.
 Всё, что утеряно снова вернется
-  в другом виде, конечно,
-Под опекой равномерной и разрешимой...
+          в другом виде, конечно,
+Под опекой равномерной и разрешимой..
 
 На распад добрейших частиц обрекается и удушает.
-#j1: Только выгода мимо движет тобой.
-И никто никого, в основном, не прощает.
+Только выгода мимо движет тобой.
+И никто никого,
+          В основном, не прощает.
 
 Они пытались что-то,
-  Достигая своих личных вершин трансцендентности,
-Но, в итоге, познав агнонию ...смертности,
-  Вписались в призму вечных подглядваний арт-свежестью.
+          Достигая своих личных вершин трансцендентности,
+Но, в итоге,
+          Познав агнонию ..смертности,
+Вписались в призму вечных подглядваний
+          Арт-свежестью.
 
-  Что на складе в остатке? Как бы не было грустно --
+Что на складе в остатке? Как бы не было грустно --
 Во мраке скитаться.
 На ощупь вглядываться
-  В жутких глубин чистоту.
+В жутких глубин чистоту.
 Принимать за кошмары, распределяя по фобиям и V-признакам
-  Пока не
-    Надоест искать инстину.
+Пока не
+          Надоест искать инстину.
 </span>
 </pre>
 
@@ -263,36 +173,36 @@
 <pre>
 <span class="poem-part poem-part-content poem-part-4">
 Почти
-  Надоело, почти отцвело, почти погорело --
-    Лето.
+          Надоело, почти отцвело, почти погорело --
+                    Лето.
 
 По новой взорвало и ослепило со скоростью света.
 Похоже на дом
-  С корнями, похожих на нервы --
+          С корнями, похожих на нервы --
 Сорвало уйти с поляны из снов,
-  Прозревши моментом.
+          Прозревши моментом.
 
 С прыжка...
 И всё дальше, паря над туманом сомнений.
 От свала природы законов,
-  Тонны
-    Из соседских растений:
+          Тонны
+                    Из соседских растений:
 "Ещё не засохла земля. Под ней расползаются черви.
 По признакам много еды обещают доставить скорее
-Далекие тучи
-  По новой.
-    Главное верить!".
+Далекие тучи.
+          По новой.
+                    Главное верить!".
 
-Улитки развесили лозунги клеем --
-  "Все вместе! (На время.)
-    Под землю!".
+Улитки развесили лозунги, склеив --
+          "Все вместе! (На время.)
+                    Под землю!".
 
 Засохли следы, помутнели.
 Останутся тут навсегда,
-  обделенные сложными книгами.
+          Обделенные сложными книгами.
 
 Все это застыло одним из слоев,
-  ископаемой пылью.
+          Ископаемой пылью.
 </span>
 </pre>
 <span class="poem-part poem-part-5 poem-part-title">
@@ -302,60 +212,65 @@
 <span class="poem-part poem-part-content poem-part-6">
 I.
 Стоянки вдоль звездной реки
-  И минус сто тысяч.
-Кирпич на кирпич -- cтена из названий и янтаря --
-  Почти без счета.
+          И минус сто тысяч.
+Кирпич на кирпич — cтена из названий и янтаря --
+          Почти без счета.
 
 А за ней шла игра;
 А за ней в лагеря и храмы
-  Разбредались уставшею глиной по жилам
-  Семьи --
-    Вихрем, с скривившимся ликом.
+          Разбредались уставшею глиной по жилам
+          Семьи --
+                    Вихрем, с скривившимся ликом.
 
 Свернул не туда --
-  Так и выжил,
-Закрыв все дела и кажется прошло мигом -> (jump #j1).
-
+          Так и выжил,
+Закрыв все дела и кажется прошло мигом.
 Назвалось дорогой;
 Отчерченной линией дальше куда-то;
-Со стоков стекала отчаянно пятнами пота -- мелонхолия,
-Размывая пласты древнегреческих мнений.	Побеги
+Со стоков стекала отчаянно пятнами пота --
+          Мелонхолия,
+          Размывая пласты древнегреческих мнений.
+                    Побеги
 Из туманных мечтаний стремятся
-  Чуть дальше логических веток.
+Чуть дальше логических веток.
 Оставляя эпохе
-  Украситься новыми листьями --
-  Изумрудами, аметистами, ?апокалипсисом.
+          Украситься новыми листьями --
+          Изумрудами, аметистами,
+                    ?Апокалипсисом.
 
 В преломлениях света видением общее дерево.
 И временно, ради эксперимента --
-  Перестав верить в сверх-немощь,
-  В стороне от извечной борьбы
-  И избыточной крови анализ
-    Почти что голым.
+          Перестав верить в сверх-немощь,
+          В стороне от извечной борьбы
+          И избыточной крови анализ
+                    Почти что голым.
 
 Под сенью изрезан скопившийся ил
-  И траншеями пепла мести:
-  "Ты тоже по своему мстишь, упиваясь продолжительностью мучений".
+          И траншеями пепла мести:
+          "Ты тоже по своему мстишь, упиваясь продолжительностью мучений".
 </span>
 <span class="poem-part poem-part-content poem-part-7">
 II.
 В кулаках --
-  В песок
-  Сгоревшей земли и пропахшей от серы и гари воздух
-    В ноздри насыщенным слогом.
+          В песок
+          Сгоревшей земли и пропахшей от серы и гари воздух
+                    В ноздри насыщенным слогом.
+
 Это всё что осталось после
-  С колес механизмов,
-  Бесполезным проржавленным ломом.
+          С колес механизмов,
+                    Бесполезным проржавленным ломом.
 
 Завален горизонт неба
-  и всё оказалось верно.
-И не видно с чего бы в ладонях вода,
-  Когда в дефеците самое
-Нужное. Тень ожила, самопризвавшийсь на теплое место,
+          И всё оказалось верно.
+И не видно с чего бы в ладонях
+          Вода,
+          Когда в дефеците самое
+                    Нужное. Тень ожила, самопризвавшийсь
+На теплое место,
 Застывая одним из слоев;
 В цитатник вливаясь с
-  Предкопуляционными воспоминаниями
-    Цветения.
+          Предкопуляционными воспоминаниями
+                    Цветения.
 </span>
 <span class="poem-part poem-part-8 poem-part-title">
 <h4><span>Часть 4.</span> Звуки</h4>
@@ -363,56 +278,47 @@ II.
 <span class="poem-part poem-part-content poem-part-9">
 За разорением
 Застывшее время с прокруткой назад и
-  Никому ничего не досталось.
+          Никому ничего не досталось.
 Всё осталось как раньше.
 Умирающий климат культурно в событиях равных.
 Так хочется жить, но нечем дышать и нечем
-  Защищаться от -> (jump #j2).
+          Защищаться от..
 
 Кто
-  Спасет от?
-    #j2: Рокового дня, что завтра уже наступит.
+          Спасет от?
+          ..Рокового дня, что завтра уже наступит.
+
 И тут прошлась в спорах.
-  Город, объевшись грехом, в руинах.
+          Город, объевшись грехом, в руинах.
 
 Спустился понятным, слепым, но прозревшим,
-  Чтобы хамить и менять настроения;
-  Покрываться мглой поколений.
+          Чтобы хамить и менять настроения;
+          Покрываться мглой колений.
 
 Плейлист заслушанных мелодий
-  С тобой.
+          С тобой.
 Наедине со своей биомехой
-  Доволен.
+          Доволен.
 
 Чем платить за проезд?
 По карманам --
-  Отсутствует нужная схема.
+          Отсутствует нужная схема.
 Полтрубки нашел, полкружки достал, увидел полнеба.
 Своё начавшее жмуриться
-  От удовольствия,
-  Где дальше доэволюционировать?
+          От удовольствия,
+          Где дальше доэволюционировать?
 </span>
 </pre>
     </div>
 
-
-      <img src="img/w4.jpg" alt="" class="wall-img" id="p3wall">
-    </div>
+  </div>
   </section>
 
   <!-- 4. About -->
   <section class="page page-4" id="page4">
-      <article class="page-content">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <p></p>
-            </div>
-          </div>
-        </div>
-      </article>
+    <h3>The End</h3>
 
-    <video autoplay muted loop id="tree_video" class="video">
+    <video autoplay loop id="tree_video" class="video">
       <source src="video/sea.mp4" type="video/mp4">
     </video>
   </section>
@@ -421,23 +327,7 @@ II.
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-  <!-- Wheel Support -->
-  <script src="js/lib/wheel.js"></script>
 
-  <!-- Deep Parallax Effect -->
-  <script src="js/lib/parallax.min.js"></script>
-
-  <!-- Crossbrowser Full Screen -->
-  <script src="js/lib/screenfull.min.js"></script>
-
-  <!-- Crossbrowser Storage -->
-  <script src="js/lib/jstorage.min.js"></script>
-
-  <!-- Config menu  -->
-  <script src="js/config-menu.js"></script>
-
-  <!-- Custom JS -->
-  <script src="js/main.js"></script>
 </body>
 
 </html>

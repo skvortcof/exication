@@ -1,26 +1,8 @@
-
-::-webkit-input-placeholder {
-  color: #ccc;
-}
-
-:-moz-placeholder {
-  color: #ccc;
-}
-
-::-moz-placeholder {
-  color: #ccc;
-}
-
-:-ms-input-placeholder {
-  color: #ccc;
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-content;
   padding-top: 0;
   padding-bottom: 0;
   background: #1a2036;
-  overflow: hidden;
 }
 
 main {
@@ -28,10 +10,6 @@ main {
 }
 
 a {
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
   outline: none;
 }
 
@@ -52,7 +30,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Constantia', 'Merriweather', serif;
+  font-family: $font-headers;
 }
 
 h1,
