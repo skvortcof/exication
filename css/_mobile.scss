@@ -2,6 +2,42 @@
  * 4.0 Responsive
  */
 
+@media only screen and (max-width:700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    .title {
+      font-size: 70px;
+    }
+
+    .title-letter {
+      top: 0;
+    }
+  }
+
+  .page-2 {
+    .page-content {
+      padding: 30px 0;
+    }
+  }
+
+  .poem {
+    h4 {
+      font-size: 40px;
+      padding: 30px 0;
+    }
+
+    pre {
+      margin: 0 20px;
+    }
+  }
+}
+
+
+
+
 /* Bootstrap Breakpoints */
 
 @media only screen and (max-width:1200px) {

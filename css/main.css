@@ -11,6 +11,17 @@
 ::selection{background:#3c5485;color:#fff}
 */
 /* Placeholder */
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #1a2036 url("../img/spinner.gif") no-repeat center center;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   padding-top: 0;
@@ -305,6 +316,28 @@ img {
 /**
  * 4.0 Responsive
  */
+@media only screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header .title {
+    font-size: 70px;
+  }
+  .header .title-letter {
+    top: 0;
+  }
+  .page-2 .page-content {
+    padding: 30px 0;
+  }
+  .poem h4 {
+    font-size: 40px;
+    padding: 30px 0;
+  }
+  .poem pre {
+    margin: 0 20px;
+  }
+}
+
 /* Bootstrap Breakpoints */
 @media only screen and (max-width: 1200px) {
   /* Large screen / wide desktop */
