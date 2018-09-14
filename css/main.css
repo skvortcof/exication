@@ -20,7 +20,7 @@
   height: 100%;
   overflow: visible;
   background: #1a2036 url("../img/spinner.gif") no-repeat center center;
-  opacity: .8;
+  opacity: 1;
 }
 
 body {
@@ -255,7 +255,7 @@ img {
 /* Pages */
 .js .main {
   position: relative;
-  z-index: 1000;
+  z-index: 900;
   background: #1a2036;
   top: 100vh;
 }
@@ -330,14 +330,20 @@ img {
   body {
     overflow-x: hidden;
   }
+  .video {
+    display: none;
+  }
+  .header .header-body {
+    top: 50px;
+  }
   .header .title {
     font-size: 70px;
   }
   .header .title-letter {
     top: 0;
   }
-  .page-2 .page-content {
-    padding: 30px 0;
+  .page-2 {
+    display: none;
   }
   .poem h4 {
     font-size: 40px;

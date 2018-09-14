@@ -1,7 +1,9 @@
 (function ($) {
   $(function () {
 
-    $('body').addClass('js');
+    if ($(window).width() > 700) {
+      $('body').addClass('js');
+    }
 
   });
 })(jQuery);
