@@ -12,6 +12,10 @@
 */
 /* Placeholder */
 .preloader {
+  display: none;
+}
+
+.js .preloader {
   position: fixed;
   left: 0;
   top: 0;
