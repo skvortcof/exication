@@ -20,6 +20,7 @@
   height: 100%;
   overflow: visible;
   background: #1a2036 url("../img/spinner.gif") no-repeat center center;
+  opacity: .8;
 }
 
 body {
@@ -189,9 +190,17 @@ img {
   width: auto;
 }
 
+.js .header {
+  height: 100%;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 500;
+}
+
 .header {
   position: relative;
-  height: 100%;
 }
 
 .header .header-body {
@@ -238,47 +247,48 @@ img {
 
 /* Splash Video */
 .video {
-  min-width: 100%;
+  width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
 }
 
 /* Pages */
-/* Page 1 | Configuration */
-.body-page-1 .mistake {
-  display: inline;
+.js .main {
+  position: relative;
+  z-index: 1000;
+  background: #1a2036;
+  top: 100vh;
 }
 
-/* Page 3 */
-.page-2 {
+.page-1 {
   width: 100%;
   background: url(../img/w4.jpg) no-repeat #ff7840;
   background-size: 100%;
 }
 
-.page-2 .page-content {
+.page-1 .page-content {
   color: #fff;
-  padding: 200px 0;
+  padding: 200px 0 100px;
 }
 
-.page-2 .page-content ul {
+.page-1 .page-content ul {
   padding: 25px 0 35px;
 }
 
-.page-2 .page-content ul li {
+.page-1 .page-content ul li {
   font-size: 16px;
 }
 
-.page-2 .page-content p {
+.page-1 .page-content p {
   font-size: 16px;
   margin: 25px 0 15px;
 }
 
-.page-4 {
+.page-2 {
   position: relative;
 }
 
-.page-4 h3 {
+.page-2 h3 {
   color: #fff;
   font-size: 40px;
   text-align: center;

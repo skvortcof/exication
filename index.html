@@ -22,21 +22,18 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/main.css">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-
-  <!-- Pre-empt IE9 into quirks mode -->
-  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
 </head>
 
 <body>
   <div class="preloader" id="preloader"></div>
 
   <!-- Audio -->
-  <audio id="audio" autoplay loop>
+  <audio id="audio" autoplay loop preload="auto">
     <source src="sound/muldeponie.mp3" type="audio/mpeg">
   </audio>
 
@@ -53,22 +50,24 @@
       </p>
     </div>
 
-    <video preload autoplay muted loop id="shadow_video" class="video" poster="img/video-1.jpg">
+    <video preload="auto" autoplay muted loop class="video" poster="img/video-1.jpg">
       <source src="video/shadow.mp4" type="video/mp4">
+      <source src="video/shadow.webm" type="video/webm">
     </video>
   </header>
 
+<main class="main">
   <!-- 2. City -->
-  <section class="page page-2" id="page3">
+  <section class="page page-1">
     <article class="page-content">
         <div class="container">
           <div class="row">
             <div class="col-md">
               <h4>Добро пожаловать<br> в Эксикацию:</h4>
               <ul>
-                <li>⚛ оживление забываемого</li>
-                <li>⚛ привет из соседнего измерения</li>
-                <li>⚛ процесс подготовки в гербарий</li>
+                <li>- оживление забываемого;</li>
+                <li>- привет из соседнего измерения;</li>
+                <li>- процесс подготовки в гербарий.</li>
               </ul>
               <p>
                 Ещё возможностей. Осадок ненависти. Развлечение на чужих ошибках. Измерение масштабов самообмана. Ненависть перезрела; Отслоилась иссохшим листком. Никому не нужный лежит, превращаясь в компост. Поднялся воспоминаниями, оформился.
@@ -100,6 +99,9 @@
 
     <div class="wall">
       <div class="poem">
+
+
+
 
 <h4><span>Часть 1.</span> Стадо</h4>
 
@@ -277,20 +279,27 @@ II.
   </section>
 
   <!-- 4. About -->
-  <section class="page page-4" id="page4">
-    <h3>The End</h3>
+  <section class="page page-2">
+    <h3>Есть ещё время подумать.</h3>
 
-    <video autoplay loop id="tree_video" class="video" poster="img/video-2.jpg">
+    <video preload="auto" autoplay loop class="video" poster="img/video-2.jpg">
       <source src="video/sea.mp4" type="video/mp4">
     </video>
   </section>
+</main>
+
+
+
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
+  <script src="https://vjs.zencdn.net/7.1.0/video.js"></script>
+  <script src="js/js.cookie.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 
 </html>

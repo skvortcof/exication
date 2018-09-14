@@ -1,6 +1,15 @@
+.js .header {
+  height: 100%;
+
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 500;
+}
+
 .header {
   position: relative;
-  height: 100%;
 
   .header-body {
     position: absolute;

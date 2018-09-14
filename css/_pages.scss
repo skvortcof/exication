@@ -1,26 +1,20 @@
 /* Pages */
 
-
-/* Page 1 | Configuration */
-
-.body-page-1 {
-  .mistake {
-    display: inline;
-  }
+.js .main {
+  position: relative;
+  z-index: 1000;
+  background: $blue;
+  top: 100vh;
 }
 
-
-/* Page 3 */
-
-.page-2 {
+.page-1 {
   width: 100%;
   background: url(../img/w4.jpg) no-repeat $orange;
   background-size: 100%;
 
-
   .page-content {
     color: #fff;
-    padding: 200px 0;
+    padding: 200px 0 100px;
 
 
     ul {
@@ -34,12 +28,9 @@
       margin: 25px 0 15px;
     }
   }
-
-  .wall {
-  }
 }
 
-.page-4 {
+.page-2 {
   position: relative;
   h3 {
     color: #fff;
