@@ -24,7 +24,7 @@
   left: 0;
   top: 0;
   position: fixed;
-  z-index: 1000;
+  z-index: 4000;
   overflow: visible;
 }
 
@@ -332,13 +332,11 @@ img {
   font-family: 'Open Sans', sans-serif;
 }
 
-.poem pre {
-  color: #fff;
+.poem p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
-  margin: 0 auto;
-  width: 600px;
+  padding: 0 20px;
 }
 
 /**
