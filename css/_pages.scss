@@ -1,28 +1,33 @@
 /* Pages */
 
-.js .main {
-  position: relative;
-  z-index: 900;
-  background: $blue;
-  top: 100vh;
+.js {
+  .main {
+    background: $blue;
+    position: relative;
+    top: 100vh;
+    padding-bottom: 100vh;
+    z-index: 900;
+  }
 }
 
 .page-1 {
-  width: 100%;
-  background: url(../img/w4.jpg) no-repeat $orange;
+  background: url('../img/w4.jpg') no-repeat $orange;
   background-size: 100%;
+  width: 100%;
 
   .page-content {
-    color: #fff;
+    color: $content-color;
     padding: 200px 0 100px;
 
 
     ul {
       padding: 25px 0 35px;
+
       li {
         font-size: 16px;
       }
     }
+
     p {
       font-size: 16px;
       margin: 25px 0 15px;
@@ -32,8 +37,11 @@
 
 .page-2 {
   position: relative;
+  z-index: 2000;
+  background: $blue;
+
   h3 {
-    color: #fff;
+    color: $content-color;
     font-size: 40px;
     text-align: center;
     position: absolute;

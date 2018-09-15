@@ -16,15 +16,16 @@
 }
 
 .js .preloader {
-  position: fixed;
+  background: #1a2036 url("../img/spinner.gif") no-repeat center center;
+  display: block;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
   left: 0;
   top: 0;
+  position: fixed;
   z-index: 1000;
-  width: 100%;
-  height: 100%;
   overflow: visible;
-  background: #1a2036 url("../img/spinner.gif") no-repeat center center;
-  opacity: 1;
 }
 
 body {
@@ -195,7 +196,19 @@ img {
 }
 
 .js .header {
-  height: 100%;
+  position: fixed;
+  height: 270px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.video-panel {
+  display: none;
+}
+
+.js .video-panel {
+  display: block;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -210,7 +223,6 @@ img {
 .header .header-body {
   position: absolute;
   width: 100%;
-  top: 200px;
 }
 
 .header .title {
@@ -220,7 +232,6 @@ img {
   text-align: center;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   white-space: nowrap;
-  z-index: 200;
   position: relative;
   font-weight: 400;
 }
@@ -251,23 +262,24 @@ img {
 
 /* Splash Video */
 .video {
-  width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+  width: 100%;
 }
 
 /* Pages */
 .js .main {
-  position: relative;
-  z-index: 900;
   background: #1a2036;
+  position: relative;
   top: 100vh;
+  padding-bottom: 100vh;
+  z-index: 900;
 }
 
 .page-1 {
-  width: 100%;
-  background: url(../img/w4.jpg) no-repeat #ff7840;
+  background: url("../img/w4.jpg") no-repeat #ff7840;
   background-size: 100%;
+  width: 100%;
 }
 
 .page-1 .page-content {
@@ -290,6 +302,8 @@ img {
 
 .page-2 {
   position: relative;
+  z-index: 2000;
+  background: #1a2036;
 }
 
 .page-2 h3 {
