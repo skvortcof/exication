@@ -12,7 +12,9 @@ document.body.classList.add('js');
 })(jQuery);
 
 $( window ).on('load', function() {
+  /*
   $('#preloader').fadeOut('fast', function () {
     $(this).remove();
   });
+  */
 });
