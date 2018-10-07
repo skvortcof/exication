@@ -1,0 +1,91 @@
+/**
+ * 4.0 Responsive
+ */
+
+@media only screen and (max-width: 766px) {
+
+  .header {
+    height: 500px;
+  }
+
+  .glitch {
+    font-size: 70px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .content {
+    margin-bottom: 0;
+  }
+
+  .container {
+    max-width: none;
+  }
+
+  .video {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .audio {
+    display: none;
+  }
+
+  .preamble-panel {
+    display: none;
+  }
+
+  .content-body {
+    padding: 0 20px 20px;
+  }
+}
+
+
+
+
+/* Bootstrap Breakpoints */
+
+@media only screen and (max-width:1200px) {
+  /* Large screen / wide desktop */
+}
+
+@media only screen and (max-width:992px) {
+  /* Medium screen / desktop */
+}
+
+@media only screen and (max-width:768px) {
+  /* Small screen / tablet */
+}
+
+@media only screen and (max-width:480px) {
+  /* Extra small screen / phone */
+}
+
+/* Default Breakpoints */
+
+@media only screen and (max-width:1281px) {
+  /* hi-res laptops and desktops */
+}
+
+@media only screen and (max-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media only screen and (max-width:961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media only screen and (max-width:641px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media only screen and (max-width:481px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+
+@media only screen and (max-width:320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}

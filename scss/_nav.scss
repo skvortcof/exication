@@ -1,0 +1,70 @@
+/**
+ * Dropdown menu
+ */
+
+ .dropdown {
+  .dropdown-toggle {
+    &:after {
+      display: none;
+    }
+  }
+  .dropdown-menu {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    a {
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+}
+
+/**
+ * Configuration Menu
+ */
+
+.config-menu {
+  position: fixed;
+  z-index: 2000;
+  margin: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.config-menu .config-menu-item {
+  display: inline-block;
+  margin-left: 5px;
+  position: relative;
+}
+
+.body-page-1 .config-menu {
+  margin: 100px 0 0 -50px;
+  left: 50%;
+  top: 50%;
+}
+
+.body-page-1 .config-menu .subpage-item {
+  display: none;
+}
+
+.body-page-1 .config-menu .config-menu-link-continue {
+  left: -15px;
+  top: 150px;
+  margin-left: 0;
+  position: absolute;
+}
+
+.config-menu {
+  .config-menu-link-continue {
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+  }
+  .external-link {
+    float: right;
+    margin: 0 90px 0 0;
+    top: 25px;
+    position: relative;
+  }
+}

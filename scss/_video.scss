@@ -1,0 +1,23 @@
+/* Splash Video */
+.video-panel {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .content {
+    z-index: 1000;
+    background: rgba(0,0,0,.5);
+    height: 100vh;
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.video {
+  object-fit: fill;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

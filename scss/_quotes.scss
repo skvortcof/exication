@@ -1,0 +1,26 @@
+.quotes-panel {
+  color: #fff;
+}
+
+.quote {
+  display: none;
+  text-align: center;
+  padding: 100px;
+
+  &.active {
+    display: block;
+  }
+
+  q {
+    font-family: $font-headers;
+    font-size: 50px;
+    padding: 50px 0 50px 40px;
+  }
+
+  p {
+    text-transform: uppercase;
+    padding: 50px 0;
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+}

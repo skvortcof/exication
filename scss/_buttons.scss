@@ -1,0 +1,36 @@
+
+/**
+ * Buttons
+ */
+
+ .config-menu-btn {
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid #999;
+  background: transparent;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+}
+
+.config-menu-link {
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  display: block;
+  top: -26px;
+  transition: none;
+}
+
+.config-menu-btn:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-continue {
+  font-size: 12px;
+  height: 40px;
+  padding: 0 30px;
+  background: transparent;
+  width: auto;
+}

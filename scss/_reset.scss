@@ -1,0 +1,68 @@
+body {
+  font-family: $font-content;
+  padding-top: 0;
+  padding-bottom: 0;
+  //background: $blue url('../img/w4.jpg') no-repeat;
+  background: $blue;
+
+  //background: url('../img/bg/full-bloom.png') repeat;
+  //background: url('../img/bg/leaves-pattern.png') repeat;
+  //background: url('../img/bg/ep_naturalblack.png') repeat;
+  background: url('../img/bg/greyfloral.png') repeat;
+
+  //background-size: cover;
+}
+
+main {
+  display: block;
+}
+
+a {
+  outline: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-headers;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p,
+form,
+figure,
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  border: none;
+}

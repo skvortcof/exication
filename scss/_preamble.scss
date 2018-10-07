@@ -1,0 +1,43 @@
+.preamble-panel {
+  padding: 100px 0 0;
+}
+
+.preamble {
+  font-size: 12px;
+  padding: 15px;
+  background: $yellow;
+
+  .preamble-attr {
+    display: inline-block;
+    width: 60px;
+  }
+}
+
+.preamble-header {
+  padding: 40px 0 160px;
+}
+
+.annotation {
+  font-size: 12px;
+  padding: 15px;
+  background: $yellow;
+
+  h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  li {
+    padding-top: 10px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+.annotation-block {
+  display: block;
+  margin: 20px;
+}

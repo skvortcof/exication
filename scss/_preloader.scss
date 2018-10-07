@@ -1,0 +1,22 @@
+.preloader {
+  display: none;
+}
+
+.js {
+  .preloader {
+    background: $blue url('../img/spinner.gif') no-repeat center center;
+
+    display: block;
+    opacity: 1;
+
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    position: fixed;
+    z-index: 4000;
+    overflow: visible;
+
+  }
+}
