@@ -31,7 +31,10 @@ document.body.classList.add('js');
     /**
      * Mobile
      */
-    if ($(window).width() < 700) {
+    var wnd = $(window);
+    var wndWidth = wnd.width();
+
+    if (wndWidth < 700) {
       $('body').removeClass('js');
     }
     /**
