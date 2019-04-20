@@ -19,10 +19,12 @@ threejscamera.translateZ(1000);
 scene.add(threejscamera);
 
 // set up the renderer
-var renderer = new THREE.WebGLRenderer();
+var renderer = new THREE.WebGLRenderer({ alpha: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setClearColor( 0x000000, 0);
-document.body.appendChild(renderer.domElement);
+//document.body.appendChild(renderer.domElement);
+
+$('#header').append(renderer.domElement);
 
 // make the canvas adaptable to the window screen
 window.addEventListener('resize', function() {
