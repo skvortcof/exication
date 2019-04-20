@@ -33,8 +33,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: transparent url('../img/header-small.jpg') no-repeat center;
+  }
+
+  .header-title {
+    margin-top: 200px;
   }
 
   .title {
@@ -46,15 +49,6 @@
     white-space: nowrap;
     position: relative;
     font-weight: 400;
-  }
-
-  .subtitle {
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 200;
-    position: relative;
   }
 
   .mistake {
@@ -71,6 +65,15 @@
     font-size: 12px;
     display: none;
   }
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 200;
+  position: relative;
 }
 
 $primaryColor: #fff;

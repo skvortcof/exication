@@ -59,5 +59,6 @@ document.body.classList.add('js');
         return true;
       });
     });
+    document.getElementsByTagName('video')[1].volume = 0.3;
   });
 })(jQuery);

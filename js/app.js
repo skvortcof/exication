@@ -3,11 +3,12 @@ document.body.classList.add('js');
 (function ($) {
   $(function () {
 
+
     /**
      * Mobile
      */
     let wnd = $(window);
-    let wndWidth = wnd.width()
+    let wndWidth = wnd.width();
 
     if (wndWidth < 700) {
       $('body').removeClass('js');
@@ -37,6 +38,8 @@ document.body.classList.add('js');
       });
 
     });
+
+    document.getElementsByTagName('video')[1].volume = 0.3;
 
   });
 })(jQuery);

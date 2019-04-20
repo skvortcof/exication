@@ -6,14 +6,14 @@ html(class="no-js", lang="en")
   head
     title #{title}
     meta(charset="utf-8")
-    meta(viewport="utf-8" content="width=device-width")
+    meta(name="viewport", content="width=device-width")
     meta(name="google-site-verification", content="hfq9s8LsjYPjz0GULCmSrQVnTLDqjhrcF22poZdZeSg")
 
     //- Fonts
     link(href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans", rel="stylesheet")
 
     //- External CSS
-    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css", integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB", crossorigin="anonymous")
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
 
     //- Custom CSS
     link(rel="stylesheet", href="css/main.min.css")
@@ -21,10 +21,32 @@ html(class="no-js", lang="en")
   body
 
     //- Preloader
-    //- #preloader.preloader
+    <div class="preloader" id="preloader">
+      <div class="preloader--item">
+
+        <div class="sk-circle">
+          <div class="sk-circle1 sk-child"></div>
+          <div class="sk-circle2 sk-child"></div>
+          <div class="sk-circle3 sk-child"></div>
+          <div class="sk-circle4 sk-child"></div>
+          <div class="sk-circle5 sk-child"></div>
+          <div class="sk-circle6 sk-child"></div>
+          <div class="sk-circle7 sk-child"></div>
+          <div class="sk-circle8 sk-child"></div>
+          <div class="sk-circle9 sk-child"></div>
+          <div class="sk-circle10 sk-child"></div>
+          <div class="sk-circle11 sk-child"></div>
+          <div class="sk-circle12 sk-child"></div>
+        </div>
+
+        <div class="preloader--status" id="preloader_status">0%</div>
+        <div class="preloader--background-base"></div>
+        <div class="preloader--background-gradient" id="preloader_progress"></div>
+      </div>
+    </div>
 
     //- Heder
-    header.header
+    header.header#header
       .header-body
         .header-title
           h2.glitch(data-text=header) #{header}
@@ -48,7 +70,7 @@ html(class="no-js", lang="en")
                 li <span class="preamble-attr">text:</span> <a href="http://lj.rossia.org/users/kyzma/775501.html" target="_blank">http://lj.rossia.org/users/kyzma/775501.html</a>
                 li <span class="preamble-attr">music:</span> Müldeponie - L'Espoir Défunt
 
-            audio(src="sound/muldeponie.mp3", type="audio/mpeg", preload="auto", class="audiojs")
+            audio(src="sound/muldeponie.mp3", type="audio/mpeg", preload="auto", class="audiojs", autoplay)
 
 
 
@@ -73,7 +95,7 @@ html(class="no-js", lang="en")
 
               h3 ⁂
 
-              p.text-center Посвящается политически-романтическим причинам
+              p.text-center Посвящается политическим причинам
 
 
 
@@ -390,7 +412,9 @@ html(class="no-js", lang="en")
     .poem-panel
       .preamble-panel
         .preamble-header
-          h2.glitch(data-text="κey") κey
+          h2.glitch(data-text="ΞxικaџιѦ") ΞxικaџιѦ
+          p.subtitle
+            span ( key )
 
         .container
           .row
@@ -605,6 +629,9 @@ html(class="no-js", lang="en")
               .container
                 .row.justify-content-md-center
                   .col-md-auto
+
+                    img(src="https://i.imgur.com/iqQ8uOYl.jpg").poem-img
+
                     h4 II
 
                     p В кулаках —
@@ -659,7 +686,7 @@ html(class="no-js", lang="en")
                     h4.
                       <span>Часть 4.</span> *визг*
 
-                    p За разорением
+                    p За разорением —
                     p Застывшее время с прокруткой назад и
                     p &emsp;&emsp;&emsp;Никому ничего не досталось.
                     p Всё осталось как раньше.
@@ -677,11 +704,11 @@ html(class="no-js", lang="en")
                     br
                     p Спустился понятным, слепым, но прозревшим,
                     p &emsp;&emsp;&emsp;Чтобы хамить и менять настроения;
-                    p &emsp;&emsp;&emsp;Покрываться мглой от колений.
+                    p &emsp;&emsp;&emsp;Покрываться мглой до коленей.
                     br
-                    p Плейлист заслушанных мелодий
+                    p Плейлист заслушанных мелодий —
                     p &emsp;&emsp;&emsp;С тобой.
-                    p Наедине со своей биомехой
+                    p Наедине со своей биомехой —
                     p &emsp;&emsp;&emsp;Доволен.
                     br
                     p Чем платить за проезд?
@@ -691,7 +718,7 @@ html(class="no-js", lang="en")
                     p Своё начавшее жмуриться
                     p &emsp;&emsp;&emsp;От удовольствия,
                     p &emsp;&emsp;&emsp;Где дальше до-
-                    p &emsp;&emsp;&emsp;эволюционировать?
+                    p &emsp;&emsp;&emsp;&emsp;эволюцио-ни-ро-вать?
 
     //- Annotation
     .annotation-panel
@@ -721,11 +748,11 @@ html(class="no-js", lang="en")
               .content-body
                 p.
                   Решил посвятить отдельный блок техническим вопросам. В дальнейшем, в следущем проекте,
-                  буду расширять список определений, но пока разъясняю только <em>jump</em>.
+                  буду расширять список определений, но пока разъясняю только <strong>jump</strong>.
 
                 p.
-                   Структура ".. [jump #jx / y]" — является функцией прыжков по стихотворению, где x - номер метки, а y - количество переходов.
-                   "[jx] .." — метка перехода.
+                   Структура <strong>".. [jump #jx / y]"</strong> — является функцией прыжков по стихотворению, где x - номер метки, а y - количество переходов.
+                   <strong>"[jx] .."</strong> — метка перехода.
 
                 p.
                   Например, метка [jump #j1 / 1] читается как:
@@ -742,8 +769,10 @@ html(class="no-js", lang="en")
               h3 Epilogue
               p Как рано мы восстали. Захвачены заводы, как и раньше. Искаженным храмам нет числа. Проклятий больше чем звезд. Столица перенесена и перестроена.
               p Что же дальше? Им в диссонанс из всех мучений Никем и Ничего. А Мы обязательно дотянет до новой революции.
+              p.
+              p.
               p.text-right С уважением, К.
-      video(src="video/sea.mp4", type="video/mp4", preload="auto", autoplay, muted, loop, class="video").video
+      video(src="video/sea.mp4", type="video/mp4", preload="auto", autoplay, loop, class="video").video
 
 
     //- Annotation
@@ -757,6 +786,8 @@ html(class="no-js", lang="en")
                 li <a href="http://en.albarrancabrera.com/" target="_blank">http://en.albarrancabrera.com/</a>
                 li <a href="http://vladimirkush.com/to-the-top" target="_blank">http://vladimirkush.com/to-the-top</a>
                 li <a href="http://chromo-valdez.tumblr.com/">http://chromo-valdez.tumblr.com/</a>
+                li
+                  a(href="http://50watts.com/Dancing-On-and-Beneath-the-Great-Wall") http://50watts.com/Dancing-On-and-Beneath-the-Great-Wall
                 li Open sources (facebook, twitter, tumblr)
 
               .annotation-block
@@ -778,9 +809,10 @@ html(class="no-js", lang="en")
 
               .annotation-block
 
-              h5 Copyright
+              h5 Copyright and other...
+
               ul
-                li All music, pictures and video belongs to the original artists from open sources. I can't give anyone permission to use it
+                li All music, pictures and video belongs to the original artists from open sources. I can't give anyone permission to use it.
                 li I don't use any web trackers or cookies
                 li I created this site for fun and don't have any commercial plans for it
 
@@ -796,12 +828,26 @@ html(class="no-js", lang="en")
               h5 Update
               ul
                 li 15.10.18
+                li 22.02.19
+                li 20.04.19
 
 
+    //- Three.js
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js" type="text/javascript"></script>
 
-    script(src="https://code.jquery.com/jquery-3.3.1.min.js", integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=", crossorigin="anonymous")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js", integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49", crossorigin="anonymous")
-    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js", integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T", crossorigin="anonymous")
+    //- Bootstrap, jQuery
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    //- Preloadr
+    script(src="js/jquery.preloadr.js")
+
+    //- Phyllotaxis
+    //- https://codepen.io/kesson/pen/aqwOxR
+    script(src="js/phyllotaxis.js")
+
+    //- Audio
     script(src="js/audiojs/audio.min.js")
 
     script(src="js/script.min.js")
